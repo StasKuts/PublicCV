@@ -1,0 +1,72 @@
+/* Main */
+main {
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main {
+    width: 723px;
+    margin-top: calc((100% - 723px) / 3);
+    margin-bottom: calc((100% - 723px) / 3);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main {
+    width: 933px;
+    margin-top: calc((100% - 933px) / 3);
+    margin-bottom: calc((100% - 933px) / 3);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 1127px;
+    margin-top: calc((100% - 1127px) / 5);
+    margin-bottom: calc((100% - 1127px) / 5);
+  }
+}
+
+@media print {
+  main {
+    display: none;
+  }
+}
+
+/* Page */
+.page {
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+  transition: box-shadow 0.2s linear;
+}
+.page[style^="border-color"] {
+  padding: 4.5em;
+}
+.page[style^="border-color"]:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  right: 2em;
+  bottom: 2em;
+  border-color: inherit;
+  border-width: 1em;
+  border-style: solid;
+  pointer-events: none;
+  transition: border-color 0.2s ease-in-out;
+}
+@media only screen {
+  .page:hover {
+    box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page,
+  .page[style^="border-color"] {
+    padding: 0;
+  }
+  .page[style^="border-color"]:before {
+    display: none;
+  }
+}
