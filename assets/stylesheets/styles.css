@@ -49,6 +49,10 @@
   font-weight: 300;
 }
 
+.bold-weight {
+  font-weight: 700;
+}
+
 .contacts-list {
   display: grid;
   grid-template-columns: repeat(4, auto);
