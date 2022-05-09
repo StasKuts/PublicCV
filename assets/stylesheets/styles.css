@@ -112,6 +112,7 @@
   line-height: 1;
   margin: 0 0.5rem 0.5em 0;
   padding: 0.55rem 0.75rem;
+  white-space: nowrap;
 }
 
 .main-page {
